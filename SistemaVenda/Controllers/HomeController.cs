@@ -2,7 +2,9 @@
 using SistemaVenda.DAL;
 using SistemaVenda.Entidades;
 using SistemaVenda.Models;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace SistemaVenda.Controllers
 {
@@ -20,9 +22,9 @@ namespace SistemaVenda.Controllers
              
         public IActionResult Index()
         {
-         
 
-            return View();
+            IEnumerable<Categoria> lista = Repositorio.Categoria.ToList();
+            return View(lista);
         }
 
         public IActionResult Privacy()
