@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Microsoft.EntityFrameworkCore;
 using SistemaVenda.Entidades;
 
 namespace SistemaVenda.DAL
 {
+
+
+ 
     public class ApplicationDbContext :  DbContext
     {
         public DbSet<Categoria> Categoria { get; set; }
@@ -16,21 +16,22 @@ namespace SistemaVenda.DAL
         public DbSet<Venda> Venda{ get; set; }
         public DbSet<VendaProdutos> VendaProdutos { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+       public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+        protected  override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.Entity<VendaProdutos>().HasKey(x => new { x.CodigoVenda, x.CodigoProduto });
+            builder.Entity<VendaProdutos>().HasKey(x => new { x.CodigoVenda, x.CodigoProduto});
+
+                builder.Entity<VendaProdutos>()
+                       .HasOne(x => x.Venda)
+                       .WithMany(y => y.Produdos)
+                       .HasForeignKey(x => x.CodigoVenda);
 
             builder.Entity<VendaProdutos>()
-                .HasOne(x => x.Venda)
-                .WithMany(y => y.Produdos)
-                .HasForeignKey(x => x.CodigoVenda);
-
-            builder.Entity<VendaProdutos>()
-              .HasOne(x => x.Produto)
-              .WithMany(y => y.Vendas)
-              .HasForeignKey(x => x.CodigoProduto);
-
+                   .HasOne(x => x.Produto)
+                   .WithMany(y => y.Vendas)
+                   .HasForeignKey(x => x.CodigoProduto);
+                   
 
         }
 

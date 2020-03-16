@@ -9,11 +9,10 @@ namespace SistemaVenda.Entidades
 {
     public class Categoria
     {
+        
         [Key]
         public int? Codigo { get; set; }
         public string Descricao { get; set; }
-
-        [ForeignKey("Categoria")]
         public ICollection<Produto> Produtos { get; set; }
 
     }
