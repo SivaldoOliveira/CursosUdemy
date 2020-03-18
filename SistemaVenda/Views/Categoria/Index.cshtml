@@ -1,0 +1,21 @@
+﻿@model List<SistemaVenda.Entidades.Categoria>;
+<h2>Categoria</h2>
+<hr/>
+<table class="table table-bordered">
+    <thead>
+        <tr style="background-color:#f6f6f6">
+            <th>Código</th>
+            <th>Descrição</th>
+
+        </tr>
+    </thead>
+    <tbody> 
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Codigo</td>
+            <td>@item.Descricao</td>
+        </tr>
+        }
+    </tbody>
+</table>

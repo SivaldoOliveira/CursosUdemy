@@ -23,8 +23,8 @@ namespace SistemaVenda.Controllers
         public IActionResult Index()
         {
 
-            IEnumerable<Categoria> lista = Repositorio.Categoria.ToList();
-            return View(lista);
+          
+            return View();
         }
 
         public IActionResult Privacy()
