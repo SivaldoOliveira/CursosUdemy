@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SistemaVenda.Entidades
-    { public class Produto
 {
-    [Key]
+    public class Produto
+    {
+        [Key]
         public int? Codigo { get; set; }
-        public string  Descricao { get; set; }
+        public string Descricao { get; set; }
         public double Quantidade { get; set; }
         public decimal Valor { get; set; }
 
@@ -21,7 +19,7 @@ namespace SistemaVenda.Entidades
 
         public ICollection<VendaProdutos> Vendas { get; set; }
 
-      
+
 
     }
 }

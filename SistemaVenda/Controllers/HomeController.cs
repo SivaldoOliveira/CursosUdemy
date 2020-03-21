@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaVenda.DAL;
-using SistemaVenda.Entidades;
 using SistemaVenda.Models;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 
 namespace SistemaVenda.Controllers
 {
@@ -19,11 +16,11 @@ namespace SistemaVenda.Controllers
             Repositorio = repositorio;
         }
 
-             
+
         public IActionResult Index()
         {
 
-          
+
             return View();
         }
 

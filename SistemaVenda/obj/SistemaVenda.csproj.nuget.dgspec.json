@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sival\\OneDrive\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj": {}
+    "C:\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sival\\OneDrive\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj": {
+    "C:\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sival\\OneDrive\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj",
+        "projectUniqueName": "C:\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj",
         "projectName": "SistemaVenda",
-        "projectPath": "C:\\Users\\sival\\OneDrive\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj",
+        "projectPath": "C:\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\SistemaVenda.csproj",
         "packagesPath": "C:\\Users\\sival\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sival\\OneDrive\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\obj\\",
+        "outputPath": "C:\\CursosCSharp\\AspNetUdemy\\SistemaVenda\\SistemaVenda\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sival\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,11 +42,9 @@
               "target": "Package",
               "version": "[6.4.0, )"
             },
-            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
-              "version": "[2.9.8, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -79,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
