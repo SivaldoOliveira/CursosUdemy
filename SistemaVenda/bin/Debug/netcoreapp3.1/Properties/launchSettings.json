@@ -22,8 +22,8 @@
     "SistemaVenda": {
       "commandName": "Project",
       "launchBrowser": true,
-      "sqlDebugging": true,
-      "nativeDebugging": true,
+      "sqlDebugging": false,
+      "nativeDebugging": false,
       "applicationUrl": "https://localhost:5001;http://localhost:5000"
     }
   }
