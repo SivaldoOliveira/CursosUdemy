@@ -25,7 +25,7 @@ namespace SistemaVenda.DAL
 
             builder.Entity<VendaProdutos>()
                    .HasOne(x => x.Venda)
-                   .WithMany(y => y.Produdos)
+                   .WithMany(y => y.Produtos)
                    .HasForeignKey(x => x.CodigoVenda);
 
             builder.Entity<VendaProdutos>()

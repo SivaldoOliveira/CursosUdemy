@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\SistemaVenda",
+    "\\SistemaVenda\\Views",
+    "\\SistemaVenda\\Views\\Produto",
+    "\\SistemaVenda\\Views\\Venda"
+  ],
+  "SelectedNode": "\\SistemaVenda\\Views\\Produto\\Cadastro.cshtml",
+  "PreviewInSolutionExplorer": false
+}
